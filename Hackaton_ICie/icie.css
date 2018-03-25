@@ -17,6 +17,12 @@ body{
     height: 100%;
 }
 
+body *:focus {
+  -webkit-box-shadow: 0px 0px 3px 1px red;
+  -moz-box-shadow: 0px 0px 3px 1px red;
+  box-shadow: 0px 0px 3px 1px red;
+}
+
 main {
   height: 92%;
 }
@@ -49,6 +55,10 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     color: black;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #D00;
 }
 
 .logo{
@@ -170,7 +180,7 @@ nav ul li a{
     justify-content: center;
 }
 
-.chat-form textarea{
+.chat-form input[type=text] {
     background: #fbfbfb;
     width: 75%;
     height: 50px;
@@ -178,14 +188,18 @@ nav ul li a{
     resize: none;
     padding: 10px;
     color: #333;
-    border: none;
+    border: 1px solid #777777;
+}
+
+.chat-form input[type=text]::placeholder {
+  color: #777777;
 }
 
 .chat-form textarea:focus{
     background: #fff;
 }
 
-.chat-form input[type=submit]{
+.chat-form input[type=submit] {
     background: #777777 ;
     padding: 5px 15px;
     font-size: 20px;
@@ -196,11 +210,11 @@ nav ul li a{
     -webkit-transition: background .3s ease;
     -moz-transition: background .3s ease;
     -o-transition: background .3s ease;
-
 }
 
-.chat-form button:hover{
-    background: blue;
+.chat-form input[type=submit]:hover,
+.chat-form input[type=submit]:focus {
+    background: #D00;
 }
 
 .sr-only {
@@ -237,6 +251,7 @@ footer {
   width: 1px;
   overflow: hidden;
   z-index: 10000;
+  text-decoration: none;
 }
 
 .skip-nav-link:focus {
