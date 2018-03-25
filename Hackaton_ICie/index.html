@@ -3,104 +3,126 @@
     <head>
     <title>ICie Bot</title>
      <link rel="stylesheet" type="text/css" href="icie.css">
+     <meta charset="utf-8">
     </head>
 
     <body>
-           
-            <header>
-                <div class="wrapper">
-                    <div class="logo"> <img src="image/logo.png" class="logo" alt="logo"></div>
-                    <div class="menu">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <p ><a href="">Accueil</a></p>
-                                </li>
-                                <li>
-                                    <p ><a href="">À Propos</a></p>
-                                </li> 
-                                <li>
-                                    <p ><a href="">FAQ</a></p>
-                                </li>     
-                                <li>
-                                    <p ><a href="">Profil</a></p>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
+      <section>
+        <a class="skip-nav-link" href="#fenetreConversation">Aller à la fenêtre de conversation</a>
+      </section>
 
-            <main>
-                <section class="Bot">
-                    <div class="chatbox">
-                        <div class="chatlog">
-                            <div class="chat icie">
-                                <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Hey !</p>
-                            </div>  
+      <header>
+          <div class="wrapper">
+              <div class="logo"> <img src="image/logo.png" class="logo" alt="logo"></div>
+              <div class="menu">
+                  <nav role="navigation">
+                      <ul>
+                          <li>
+                              <a aria-current="page" href="">Accueil</a>
+                          </li>
+                          <li>
+                              <a href="">À Propos</a>
+                          </li>
+                          <li>
+                              <a href="">FAQ</a>
+                          </li>
+                          <li>
+                              <a href="">Profil</a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </header>
 
-                            <div class="right chat user">
-                                <div class="user-photo"> <img src="image/Olivier.png" alt="icie"></div>
-                                <p class="chat-message">Hello</p>
-                            </div> 
-                            
-                            <div class="chat icie">
-                                <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">C'est la première fois que je te vois ici !</p>
-                            </div>   
-                            
-                            <div class="chat icie">
-                                <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Laisse moi me présenter, je suis ICie et mon objectif est de te présenter les nouvelles qui t'intéressent vraiment ;)</p>
-                            </div>
-                            
-                            <div class="chat icie">
-                                <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Pour mieux te connaître j'ai quelques questions a te poser</p>
-                            </div>
-                            
-                            <div class="chat icie">
-                            <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Coche parmis les catégories suivantes celles que tu préfères :)</p>
-                            </div>
-                            
-                            <div class="chat icie"> 
-                            <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Tu aimes le sport ! :D Moi aussi !! :D </p>
-                            </div>
-                            
-                             <div class="right chat user"> 
-                            <div class="user-photo"><img src="image/Olivier.png" alt="user"></div>
-                                <p class="chat-message">Hockey !! :D </p>
-                            </div>
-                            
-                            <div class="chat icie"> 
-                            <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Yeeeaah !! :cross:  </p>
-                            </div>
-                            
-                            <div class="chat icie"> 
-                            <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Coche tes types de medias favoris:</p>
-                            </div>
-                            
-                            <div class="chat icie"> 
-                            <div class="user-photo"><img src="image/logo_icon.png" alt="icie"></div>
-                                <p class="chat-message">Merci !</p>
-                            </div>
-                
-                
-                        </div>    
+      <main>
+        <h1 class="sr-only">Accueil</h1>
+          <section aria-live="polite" class="Bot">
+            <h2 class="sr-only" id="fenetreConversation">Fenêtre de conversation</h2>
+            <div class="chatlog">
+                <article class="chat icie">
+                  <figure class="user-photo">
+                    <img src="image/logo_icon.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="icie-message">Hey !</p>
+                </article>
 
-                        <div class="chat-form">
-                            <textarea></textarea>
-                            <button>Send</button>
-                        </div>
-                    </div> 
-                </section>
-            </main>
-                
+                <article class="right chat user">
+                  <figure class="user-photo">
+                    <img src="image/Olivier.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="chat-message">Hello</p>
+                </article>
+
+                <article class="chat icie">
+                  <figure class="user-photo">
+                    <img src="image/logo_icon.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="icie-message">C'est la première fois que je te vois ici !</p>
+                  <p class="icie-message">Laisse moi me présenter, je suis ICie et mon objectif est de te présenter les nouvelles qui t'intéressent vraiment ;)</p>
+                  <p class="icie-message">Pour mieux te connaître j'ai quelques questions a te poser</p>
+                  <p class="icie-message">Coche parmis les catégories suivantes celles que tu préfères :)</p>
+                  <form class="icie-form">
+                    <fieldset>
+                      <legend class="sr-only">Réponses</legend>
+                      <input type="checkbox" id="politique" name="politique"><label for="politique">Politique</label><br>
+                      <input type="checkbox" id="economie" name="economie"><label for="economie">Économie</label><br>
+                      <input type="checkbox" id="sport" name="sport"><label for="sport">Sport</label><br>
+                      <input type="submit" value="Envoyer">
+                    </fieldset>
+                  </form>
+                </article>
+
+                <article class="right chat user">
+                  <figure class="user-photo">
+                    <img src="image/Olivier.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="chat-message">Sport, Politique, Économie</p>
+                </article>
+
+                <article class="chat icie">
+                  <figure class="user-photo">
+                    <img src="image/logo_icon.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="icie-message">Tu aimes le sport ! :D Moi aussi !! :D </p>
+                </article>
+
+                <article class="right chat user">
+                  <figure class="user-photo">
+                    <img src="image/Olivier.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="chat-message">Hockey !! :D </p>
+                </article>
+
+                <article class="chat icie">
+                  <figure class="user-photo">
+                    <img src="image/logo_icon.png" alt="icie">
+                    <figcaption class="sr-only">ICie a dit</figcaption>
+                  </figure>
+                  <p class="icie-message">Yeeeaah !! :cross:  </p>
+                  <p class="icie-message">Coche tes types de medias favoris:</p>
+                  <p class="icie-message">Merci !</p>
+                </article>
+            </div>
+
+            <footer>
+              <form class="chat-form">
+                <fieldset>
+                  <legend class="sr-only">Réponse</legend>
+                  <textarea placeholder="Écrire votre message..." name="champ_texte_reponse"></textarea>
+                  <input type="submit" value="Envoyer">
+                </fieldset>
+              </form>
+          </footer>
+        </section>
+      </main>
+
     </body>
 
-</html> 
+</html>

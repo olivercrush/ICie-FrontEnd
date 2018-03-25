@@ -4,20 +4,27 @@
 }
 
 
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body{
     margin: 0;
     background: #F4F4F4 no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
+main {
+  height: 92%;
+}
 
 header{
     width: 100%;
+    height: 8%;
     background-color: #fff;
-}
-
-.bot{
-    height: 100%vh;
 }
 
 .wrapper{
@@ -30,6 +37,7 @@ nav ul{
     text-align: right;
     margin: 0;
     padding: 0;
+    padding-top: 20px;
 }
 
 nav ul li{
@@ -43,11 +51,9 @@ nav ul li a{
     color: black;
 }
 
-
-
 .logo{
-    padding-top:2px; 
-    height: 50px; 
+    padding-top:2px;
+    height: 50px;
     float: left;
 }
 
@@ -59,12 +65,12 @@ nav ul li a{
     margin: 0;
 }
 
-.chatbox{
+.Bot{
     padding: 20px;
     max-width: 500px;
     min-width: 250px;
     margin: auto;
-    height: 600px;
+    height: 85%;
 }
 
 .chatlog{
@@ -86,40 +92,81 @@ nav ul li a{
     text-align: right;
 }
 
-.chat .user-photo{
+.user-photo {
     border-radius: 50%;
     width: 50px;
-    height: 50px;
-    background-color: #fff;
-    overflow: hidden;
+    height: 100%;
+    margin: 0;
 }
 
-.chat .user-photo img{
-    width: 100% ;
+.user-photo img {
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.chat .chat-message{
+.chat img {
+  float: left;
+}
+
+.icie-message {
     max-width: 70%;
     padding: 8px;
-    margin:   0 10px;
-    background:#fff;
+    margin: 5px 0px 0px 60px;
+    background: #FFF;
     border-radius: 5px;
     font-size: 18px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.icie-message:nth-child(2) {
+    margin: 5px 0px 0px 10px;
+}
+
+.icie-form {
+    max-width: 70%;
+    padding: 8px;
+    margin: 5px 0px 0px 60px;
+    background: #FFF;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.icie-form fieldset {
+  border: none;
+}
+
+.icie-form input[type=checkbox] {
+  padding-bottom: 15px;
+}
+
+.chat-message {
+    max-width: 70%;
+    padding: 8px;
+    margin: 5px 60px 0px 0px;
+    background: #D00;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.chat-message:nth-child(2) {
+    margin: 5px 10px 0px 0px;
 }
 
 .icie .chat-message{
-    background: #D00;
-    color: white;
+    background: #fff;
 }
 
 .user .chat-message{
     order:-1;
+    color: white;
 }
 
 .chat-form{
     margin-top: 20px;
     display: flex;
-    background-color: #fff;
     justify-content: center;
 }
 
@@ -138,43 +185,67 @@ nav ul li a{
     background: #fff;
 }
 
-.chat-form button{
+.chat-form input[type=submit]{
     background: #777777 ;
     padding: 5px 15px;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     border: none;
     cursor: pointer;
-    
+
     -webkit-transition: background .3s ease;
     -moz-transition: background .3s ease;
     -o-transition: background .3s ease;
-    
-}
 
+}
 
 .chat-form button:hover{
     background: blue;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
 
+.chat-form fieldset {
+  border: none;
+  padding: none;
+  background: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+footer {
+  height: 15%;
+  padding: 0;
+  margin: 0;
+}
 
+.skip-nav-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  overflow: hidden;
+  z-index: 10000;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.skip-nav-link:focus {
+  width: 400px;
+  height: 50px;
+  color: #D00;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+}
